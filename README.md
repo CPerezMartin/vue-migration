@@ -1,3 +1,8 @@
+# last versions used to run project
+node v14.18.1
+yarn v1.22.19
+
+
 # nuxt-template
 
 ## Build Setup
