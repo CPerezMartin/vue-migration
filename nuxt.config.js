@@ -1,6 +1,7 @@
 import fs from 'fs';
 import YAML from 'yaml';
 import webpack from 'webpack';
+import { defineNuxtConfig } from 'nuxt/config';
 
 require('dotenv').config();
 
@@ -10,7 +11,7 @@ function readYamlFile(filePath) {
   return YAML.parse(file);
 }
 
-export default {
+export default defineNuxtConfig ({
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-template',
@@ -158,7 +159,10 @@ export default {
     },
     plugins: [
       // Ignore all locale files of moment.js
-      new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^\.\/locale$/,
+        contextRegExp: /moment$/,
+      }),
     ],
     babel: {
       plugins: [
@@ -193,4 +197,4 @@ export default {
    ** Server Middleware
    */
   serverMiddleware: [{ path: '/api/v1', handler: '@/server' }],
-};
+});

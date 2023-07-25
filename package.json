@@ -15,9 +15,11 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/composition-api": "^0.24.6",
+    "@nuxtjs/composition-api": "^0.33.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.2.0",
+    "@vue/compat": "^3.3.4",
+    "@vue/compiler-sfc": "^3.3.4",
     "cookieparser": "^0.1.0",
     "core-js": "^3.15.1",
     "element-ui": "^2.15.3",
@@ -25,10 +27,12 @@
     "js-cookie": "^3.0.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
-    "nuxt": "^2.15.7",
+    "nuxt": "^3.6.5",
     "nuxt-i18n": "^6.28.1",
     "qs": "^6.10.1",
     "slug": "^5.1.0",
+    "vue": "^3.3.4",
+    "webpack": "^5.88.2",
     "yaml": "^1.10.2"
   },
   "devDependencies": {
